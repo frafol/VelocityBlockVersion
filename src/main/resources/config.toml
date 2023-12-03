@@ -37,6 +37,10 @@ versions = [
   759,
   760,
   761,
+  762,
+  763,
+  764,
+  765,
 ]
 
 # Send this message if someone connects with a blocked version.
