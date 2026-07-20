@@ -7,7 +7,9 @@
 	<a href="https://www.gnu.org/licenses/gpl-3.0"><img src="https://img.shields.io/badge/License-GPLv3-blue.svg" alt="License: GPL v3"></a>
 </p>
 
-A port of BungeeBlockVersion for Velocity. This plugin will block players from connecting to your network with certain versions.
+A port of BungeeBlockVersion for Velocity. 
+This plugin will block players from connecting to your network with certain versions.
+Originally from hyperdefined, but original repo has been deleted.
 
 ## Features
 * Block players if they are using a version that is on the list.
