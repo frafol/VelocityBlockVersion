@@ -15,8 +15,5 @@ Originally from hyperdefined, but original repo has been deleted.
 * Block players if they are using a version that is on the list.
 * Custom disconnect message.
 
-## Documentation
-Visit the [wiki](https://github.com/frafol/VelocityBlockVersion/wiki) for help.
-
 ## License
 This plugin is released under GNU General Public License v3. See [LICENSE](https://github.com/frafol/VelocityBlockVersion/blob/master/LICENSE).
