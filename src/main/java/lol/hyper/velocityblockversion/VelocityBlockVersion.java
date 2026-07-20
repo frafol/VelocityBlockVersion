@@ -31,7 +31,6 @@ import lol.hyper.githubreleaseapi.GitHubReleaseAPI;
 import lol.hyper.velocityblockversion.commands.CommandReload;
 import lol.hyper.velocityblockversion.events.JoinEvent;
 import lol.hyper.velocityblockversion.tools.ConfigHandler;
-import org.bstats.velocity.Metrics;
 import org.slf4j.Logger;
 
 import java.io.IOException;
@@ -52,8 +51,6 @@ public class VelocityBlockVersion {
     @Inject
     private Logger logger;
     @Inject
-    private Metrics.Factory metricsFactory;
-    @Inject
     private ProxyServer server;
     @Inject
     private CommandManager commandManager;
@@ -69,8 +66,6 @@ public class VelocityBlockVersion {
             return;
         }
 
-        metricsFactory.make(this, 13308);
-
         server.getScheduler().buildTask(this, this::checkForUpdates).schedule();
 
         final JoinEvent joinEvent = injector.getInstance(JoinEvent.class);
@@ -84,7 +79,7 @@ public class VelocityBlockVersion {
     public void checkForUpdates() {
         GitHubReleaseAPI api;
         try {
-            api = new GitHubReleaseAPI("velocityblockversion", "hyperdefined");
+            api = new GitHubReleaseAPI("velocityblockversion", "frafol");
         } catch (IOException e) {
             logger.warn("Unable to check updates!", e);
             return;
